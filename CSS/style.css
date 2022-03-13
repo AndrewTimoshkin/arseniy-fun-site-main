@@ -3,21 +3,55 @@ body {
     color:black;
     background-color: #ccdfd4;
 }
+
 h1, h2, h3, h4, h5, h6, p, ul, li {
     padding: 0;
     margin: 0;
 }
+
 ul, li {
     text-decoration: none;
     list-style: none;
 }
+
 .container {
-    padding-right: 20px;
+    width: 320px;
     padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid tomato;
+}
+@media screen and (min-width:480px) {
+    .container {
+        width: 480px;
+    }
+}
+@media screen and (min-width:768px) {
+    .container {
+        width: 768px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .container {
+        width: 1200px;
+    }
 }
 .header {
     display: flex;
 }
 .site-logo {
     height: 100px;
+}
+
+.gallery-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery-list__item {
+    max-width: 240px;
+}
+.gallery-list__picture {
+    max-width: 220px;
 }
